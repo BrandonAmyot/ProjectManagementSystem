@@ -8,7 +8,7 @@ two files
 
 		db_access.php
 			
-				the sciprt that collects users input 
+				the script that collects users input 
 
 				$db		//important - edit the db_access.php file to correspond to the name of the database you are connecting to
 						//else the script will fail
@@ -16,14 +16,14 @@ two files
 
 		inner working of the script
 		
-				1. connects to the databse specified by the $db variable
+				1. connects to the database specified by the $db variable
 				2. collects the input query in an array using $post function from the 'form' element in 'spms.html' file
 				
-				3. some subtelties
-						 next I cal l 'stripslashes' function to remove backslashes auto added by php
-						 because our queries use apsotroph
+				3. some subtleties
+						 next I call 'stripslashes' function to remove backslashes auto added by php
+						 because our queries use apstrophes
 
-						 php adds backslashes when it finds apostroph thus deforming our sql query
+						 php adds backslashes when it finds apostrophe thus deforming our sql query
 
 						example: if our query was 
 	
@@ -34,11 +34,11 @@ two files
 
 									select name from student where name=\'john\'
 
-				4. next part is jut a few loops where
+				4. next part is just a few loops where
 
 						i first print the columns
 
-						then print the filed values in each tupple/row
+						then print the filled values in each tuple/row
 
 
 			
