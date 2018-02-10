@@ -1,0 +1,26 @@
+<!-- Student Project Management System
+Using a form to collect a query to run against the Student Project Management System database.
+After collecting the input, calls the PHP script db_access.php to performthe given query and print the results.
+-->
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title> Access to the cars database </title>
+		<meta charset = "utf-8" />
+	</head>
+	<body>
+	
+	<h2>Student Project Management System</h2>
+	
+	<p>
+		Please enter your query: <br />
+		<form action = "db_access.php" method = "post">
+			<textarea rows = "2" cols = "80" name = "query" >
+			</textarea>
+			<br /><br />
+			<input type = "reset" value = "Reset" />
+			<input type = "submit" value = "Submit request" />
+		</form>
+	</p>
+</body>
+</html>
