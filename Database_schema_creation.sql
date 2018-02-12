@@ -15,7 +15,7 @@ CREATE TABLE Projects (
         
 CREATE TABLE Teams (
 	TID INT PRIMARY KEY,
-    LeaderID INT,
+    LeaderID INT UNIQUE,
     NoOfMembers INT
 );
 
