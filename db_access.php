@@ -10,13 +10,11 @@ A PHP script to access the Student Mangement Databasethrough MySQL
 	</head>
 	<body>
 	<?php
-		// Connect to MySQL
-		$dbname ='studentpms';
-		$user = 'root';
+		//Connect to MySQL
+  	$user = 'root';
 		$password='root';
-
 		$db = 'ProjectManagementSystem';
-		mysqli_connect("localhost", $user, $password, $db);
+		$conn = mysqli_connect("localhost", $user, $password, $db);
 
 		if (mysqli_connect_errno()) {
 			print "Connect failed: " . mysqli_connect_error();
@@ -35,10 +33,10 @@ A PHP script to access the Student Mangement Databasethrough MySQL
 
 
 		// Execute and return results back to client
-		$result = mysqli_query($db, $query);
+		$result = mysqli_query($conn, $query);
 		if (!$result) {
 			print "Error - the query could not be executed" .
-			mysqli_error();
+			mysqli_error($conn);
 			exit;
 		}
 
