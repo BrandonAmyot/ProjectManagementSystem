@@ -15,7 +15,7 @@ CREATE TABLE Projects (
         
 CREATE TABLE Teams (
 	TID INT PRIMARY KEY,
-    LeaderID INT,
+    LeaderID INT UNIQUE,
     NoOfMembers INT
 );
 
@@ -32,6 +32,7 @@ CREATE TABLE Demos (
     TID INT,
     `Date` DATE,
     `Time` TIME,
-    Grade CHAR(1),
+    Grade CHAR(2),
+    PID INT,
     PRIMARY KEY(SID, TID)
 );
