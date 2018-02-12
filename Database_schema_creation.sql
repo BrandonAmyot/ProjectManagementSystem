@@ -33,5 +33,6 @@ CREATE TABLE Demos (
     `Date` DATE,
     `Time` TIME,
     Grade CHAR(2),
+    PID INT,
     PRIMARY KEY(SID, TID)
 );
