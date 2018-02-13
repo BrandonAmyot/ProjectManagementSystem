@@ -39,7 +39,7 @@ WHERE NoOfMembers < 4;
 -- Query 8a (with SID as input)
 SELECT TID
 FROM Members
-WHERE SID=1001;
+WHERE members.SID=1001;
 
 -- Query 8b (with NAME as input)
 SELECT TID
