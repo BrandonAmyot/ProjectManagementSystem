@@ -72,7 +72,7 @@ A PHP script to access the Student Mangement Databasethrough MySQL
 
 
 	else {
-		print "Nothing to mathc, your query returned no results. <br />";
+		print "Nothing to match, your query returned no results. <br />";
 	}
 	print "</table>";
 	?>
