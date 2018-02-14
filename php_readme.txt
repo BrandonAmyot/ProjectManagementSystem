@@ -12,7 +12,7 @@ two files
 
 				$db		//important - edit the db_access.php file to correspond to the name of the database you are connecting to
 						//else the script will fail
-
+				$conn		//important - edit this to be able to connect.
 
 		inner working of the script
 		
